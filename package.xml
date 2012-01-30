@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.7.1" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfErrorNotifierPlugin</name>
+ <channel>plugins.symfony-project.org</channel>
+ <summary>Sends email notifications when application errors (exceptions) occur.</summary>
+ <description>Sends email notifications when application errors (exceptions) occur. Its easy configuration allows you to set which environments to enable for the notifications. The details about the thrown exceptions are sent via email.</description>
+ <lead>
+  <name>Daniele Occhipinti</name>
+  <user>danieleocchipinti</user>
+  <email>danieleocchipinti.it@gmail.com</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-10-13</date>
+ <time>14:20:23</time>
+ <version>
+  <release>1.6.0</release>
+  <api>1.6.0</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="93cc56219964cda31d858dc82d73ae06" name="config/app.yml" role="data"/>
+   <file md5sum="e245a2e8db8e8cf40d5c8d8aafaa3ded" name="config/sfErrorNotifierPluginConfiguration.class.php" role="data"/>
+   <file md5sum="4d35105f076caeefb355065ac0a5a7fb" name="lib/sfErrorNotifier.php" role="data"/>
+   <file md5sum="f9504a0ab2ff6264d3979cd4b2918a1a" name="lib/sfErrorNotifierMail.php" role="data" />
+   <file md5sum="09d6e2751ec7f7f203db88d03954c220" name="lib/sfErrorNotifierErrorHandler.php" role="data" />
+   <file md5sum="dd6848244cdf11ba036aa5baca544d8a" name="README" role="data"/>
+   <file md5sum="720af3ce0a0fdd75e8231d599250f36a" name="LICENSE" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+    <package>
+      <name>symfony</name>
+      <channel>pear.symfony-project.com</channel>
+      <min>1.2.0</min>
+      <max>1.5.0</max>
+      <exclude>1.5.0</exclude>
+    </package>
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog/>
+</package>
